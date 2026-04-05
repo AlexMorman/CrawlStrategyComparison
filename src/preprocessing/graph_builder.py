@@ -20,7 +20,7 @@ class GraphBuilder:
         # else: call _bfs and save
         print("TODO");
 
-    # Bread-first search from the seed to build out a sub-graph according to the depth & max nodes determined in config file
+    # Breadth-first search from the seed to build out a sub-graph according to the depth & max nodes determined in config file
     def _bfs(self, seed):
         print("TODO");
 
