@@ -18,3 +18,7 @@ BUDGET = 200
 
 # Embedding
 EMBEDDING_MODEL = "TBD"
+
+# BM25 tuning params
+BM25_K1 = 1.5
+BM25_B = 0.75
