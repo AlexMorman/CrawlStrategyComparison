@@ -7,4 +7,4 @@ class BaseScorer(ABC):
     # return float representing the priority of the candidate
     @abstractmethod
     def score(self, candidate, wiki_graph, query, query_embedding):
-        print("TODO")
+        pass

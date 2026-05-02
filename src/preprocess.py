@@ -25,7 +25,6 @@ def main():
     for i, topic in enumerate(topics, 1):
         print(f"Building subgraph {i} of {len(topics)} for topic: {topic}")
         builder.build(topic);
-        print("TODO: Embedding model should run here")
 
 
 if __name__ == "__main__":

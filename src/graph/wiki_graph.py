@@ -26,7 +26,6 @@ class WikiGraph:
             self.abstracts[node] = content["abstract"]
             self.inlink_counts[node] = content["inlink_count"]
             self.document_lengths[node] = content["document_length"]
-
-        print("TODO: We would need to load the vector embeddings associated with this wiki graph here!")
+            self.embeddings[node] = content.get("embedding", [])
 
         print(f"Sub-graph loaded: {filepath} ({len(self.adjacency):,} nodes present)")
