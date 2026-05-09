@@ -64,8 +64,8 @@ class ExperimentRunner:
             # Because each crawler is a BaseCrawler, we can just use crawler.run and it works for all cases
             visited = crawler.run(topic, self.budget, wiki_graph, query, query_embedding)
             # Use evaluator to determine the overall score of the crawler
-            score = evaluator.evaluate(visited, query_embedding)
-            results[strategy] = {"visited": visited, "score": score}
+            score, per_node = evaluator.evaluate(visited, query_embedding)
+            results[strategy] = {"visited": visited, "score": score, "node_scores": per_node}
 
         self.result_store.save(self.experiment_id, topic, results)
 

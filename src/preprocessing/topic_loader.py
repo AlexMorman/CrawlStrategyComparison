@@ -15,6 +15,10 @@ class TopicLoader:
 
     # fetch the randomly selected topics. Use seed=42 for reproducibility
     def fetch(self, seed=42):
+        if self.output_path.exists():
+            print(f"Topics file already exists, loading from: {self.output_path}")
+            with open(self.output_path, "r", encoding="utf-8") as f:
+                return json.load(f)
         random.seed(seed)
         topics = random.sample(list(self.abstracts.keys()), self.n)
         self._save(topics)
