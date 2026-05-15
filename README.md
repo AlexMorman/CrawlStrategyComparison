@@ -40,6 +40,9 @@ sentence_transformers==5.4.1
 torch==2.11.0
 ```
 
+* More information about the embedding model used can be found here
+https://huggingface.co/sentence-transformers/all-MiniLM-L6-v2
+
 **Step 4: Usage**
 
 * First, you must run preprocess.py to assemble subgraphs. This step lasted around 30 minutes on my hardware and required around 18GB of system RAM
