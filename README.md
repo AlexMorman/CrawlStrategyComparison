@@ -1,4 +1,4 @@
-##Semantic-Focused Crawler - Strategy Comarison Experiment Usage
+# Semantic-Focused Crawler - Strategy Comarison Experiment Usage
 
 **Step 1: Prepare dataset from DBPedia**
 
